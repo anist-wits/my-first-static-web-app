@@ -11,4 +11,9 @@ module.exports = async function (context, req) {
     cars.push(newCar);
     context.res = newCar;
 
+    context.res = {
+        status: 200, /* Defaults to 200 */
+        body: newCar
+    }
+
 }
