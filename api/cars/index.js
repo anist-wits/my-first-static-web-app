@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
 
     cars = require('../../src/cars.json');
 
-    context.res.json(cars);
+    context.res = cars;
 /*    if (req.params.id) {
 
         const id = req.params.id;

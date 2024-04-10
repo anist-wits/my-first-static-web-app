@@ -9,6 +9,6 @@ module.exports = async function (context, req) {
 
     console.log(newCar);
     cars.push(newCar);
-    context.res.json(newCar);
+    context.res = newCar;
 
 }
